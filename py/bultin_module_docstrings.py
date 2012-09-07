@@ -16,8 +16,3 @@ for name in names:
     print
     print '#' * 83
     del module
-
-    
-
-    
-    
