@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo aptitude purge `dpkg -l | grep -E '^rc ' | awk '{print $2}' | tr '\n' ' '`

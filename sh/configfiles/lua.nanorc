@@ -1,0 +1,15 @@
+## Here is an example for Lua.
+##
+syntax "lua" "\.lua$"
+header "^#!.*/lua[-0-9._]*"
+icolor brightblue "function [0-9A-Z_]+"
+color magenta "\<(|and|break|do|else|elseif|end|false|for|function|goto|if|in|local|nil|not|or|repeat|return|then|true|until|while)\>"
+color brightgreen "['][^']*[^\\][']" "[']{3}.*[^\\][']{3}"
+color brightgreen "["][^"]*[^\\]["]" "["]{3}.*[^\\]["]{3}"
+color brightgreen start=""""[^"]" end=""""" start="'''[^']" end="'''"
+color cyan "(-|^|\+|\*|/|%|\(|~|=|\)|<|>)+"
+color brightred "--.*$"
+color brightred "^#!.*/*lua[-0-9._]*"
+## Some improvements.
+color blue "\<(|assert|collectgarbage|dofile|error|getmetatable|_G|io.write|ipairs|loadfile|load|next|os.execute|pairs|pcall|print|rawequal|rawget|rawlen|rawset|string.sub)\>"
+
