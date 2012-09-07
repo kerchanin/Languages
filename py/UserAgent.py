@@ -113,4 +113,3 @@ def random_user_agent_with_options(platform=None, browser=None):
 
 if __name__ == '__main__':
     print_user_agents()
-
