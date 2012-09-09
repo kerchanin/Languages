@@ -205,3 +205,6 @@ love
 
 --
 `weather.sh` originally by Brainsburn http://zenux.ru/articles/47/
+
+--
+`moyareklama_ad_parse_emails.sh` Grab emails from fresh http://www.moyareklama.ru/ ads.
