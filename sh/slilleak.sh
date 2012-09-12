@@ -23,20 +23,20 @@ for i in `seq $from $to` ; do
                     tr -d '\015'`
     link=`echo ${link} | iconv -f cp1251 -t utf8`
     url=${host}${link}
-    name=`basename ${url}`
+    name=`basename "${url}"`
     ext=`echo "${name}" | awk -F'.' '{print $NF}'`
 
-    echo 'NUMBER :' $i
-    echo 'LINK   :' $link
-    echo 'URL    :' $url
-    echo 'NAME   :' $name
-    echo 'EXT    :' $ext
+    echo 'NUMBER :' "$i"
+    echo 'LINK   :' "$link"
+    echo 'URL    :' "$url"
+    echo 'NAME   :' "$name"
+    echo 'EXT    :' "$ext"
     echo
 
     #dump_dir=/tmp/dump_dir
     #[ -d "${dump_dir}" ] || mkdir "${dump_dir}"
-    #[ -d "${ext}" ] || mkdir "${ext}"
-    #path="${dump/dir}"/"${ext}"/
-    #wget -S -O "${path}""${name}" $url
+    #[ -d "${dump_dir}"/"${ext}" ] || mkdir "${dump_dir}"/"${ext}"
+    #path="${dump_dir}"/"${ext}"
+    #wget -S -O "${path}"/"${name}" "${url}"
 
 done
