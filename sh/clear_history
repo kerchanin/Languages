@@ -11,6 +11,9 @@ rm .sqlite_history
 rm .viminfo
 rm .xsession-errors*
 rm .pyhistory
+rm .zsh_history
+rm .pry_history
+rm .recently-used
 #!!!
 rm -rf .thumbnails
 unset VERYRANDOMDIRECTORY
