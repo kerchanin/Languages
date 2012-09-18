@@ -246,7 +246,7 @@ aptitude install --without-recommends libxml2-dev #libdevel
 aptitude install --without-recommends libxslt-dev #libdevel
 #Stop callin', stop callin' I don't wanna talk anymore!
 gem install nokogiri
-#This is again for something . /* Stop telephonin' me */
+#This is again for something. /* Stop telephonin' me */
 aptitude install --without-recommends g++ #devel
 gem install mechanize
 
