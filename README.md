@@ -208,3 +208,10 @@ love
 
 --
 `moyareklama_ad_parse_emails.sh` Grab emails from fresh http://www.moyareklama.ru/ ads.
+
+rb
+--
+
+`nokogiri.rb` Brand new script to login with aspnetForm via creating new `Mechanize::Form` and submitting it.
+
+`nokogiri-post.rb` Brand new script to login with aspnetForm via researching with `Nokogiri:HTML` and posting data.
