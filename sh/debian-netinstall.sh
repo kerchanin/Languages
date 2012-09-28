@@ -7,9 +7,41 @@ aptitude install alsa-base #sound
 aptitude install mpg123 #sound
 aptitude install vorbis-tools #sound
 aptitude install moc #sound
+aptitude install moc-ffmpeg-plugin #sound
 
 #Video
 aptitude install libav-tools #video
+
+#
+aptitude install sudo #admin
+aptitude install htop #utils
+aptitude install lsof #utils
+aptitude install --without-recommends strace #utils
+aptitude install --without-recommends ltrace #utils
+aptitude install --without-recommends vim #editors
+aptitude install vim-doc #doc
+
+#Archievers
+aptitude install --without-recommends bzip2 #utils
+aptitude install --without-recommends unzip #utils
+aptitude install --without-recommends zip #utils
+aptitude install --without-recommends unrar #non-free/utils
+aptitude install --without-recommends rar #non-free/utils
+aptitude install --without-recommends p7zip-full #utils
+
+#SQLite 3
+aptitude install sqlite3 #database
+#aptitude install sqlite3-doc #doc
+
+#Git
+aptitude install --without-recommends git #vcs
+#aptitude install gitmagic #doc
+
+#Mercurial
+aptitude install --without-recommends mercurial #vcs
+
+#Java
+aptitude install --without-recommends java-package #contrib/misc
 
 #X Window System (X.Org)
 # X Window System (X.Org) infrastructure
@@ -148,22 +180,8 @@ aptitude install --without-recommends xfonts-utils #x11
 # most cases it is desirable to have the X font server (xfs) and/or an X server
 # installed to make the fonts available to X clients.
 aptitude install --without-recommends xfonts-base #fonts
+aptitude install --without-recommends xfonts-terminus #fonts
 aptitude install xterm #x11
-aptitude install sudo #admin
-aptitude install htop #utils
-aptitude install lsof #utils
-aptitude install --without-recommends strace #utils
-aptitude install --without-recommends ltrace #utils
-aptitude install --without-recommends vim #editors
-aptitude install vim-doc #doc
-
-#Archievers
-aptitude install --without-recommends bzip2 #utils
-aptitude install --without-recommends unzip #utils
-aptitude install --without-recommends zip #utils
-aptitude install --without-recommends unrar #non-free/utils
-aptitude install --without-recommends rar #non-free/utils
-aptitude install --without-recommends p7zip-full #utils
 
 #Mozilla Firefox
 aptitude install python-xpcom #python
@@ -177,22 +195,26 @@ echo 'deb http://deb.opera.com/opera/ stable non-free #Opera Browser (final rele
 echo >> /etc/apt/sources.list
 echo 'deb http://deb.opera.com/opera-beta/ stable non-free #Opera Browser (beta releases)' >> /etc/apt/sources.list
 wget -O - http://deb.opera.com/archive.key | apt-key add -
+aptitutde update
 aptitude install opera #non-free/web
 
 #GNOME
-aptitude install --without-recommends nautilus #gnome
 aptitude install --without-recommends metacity #x11
+aptitude install --without-recommends nautilus #gnome
+aptitude install --without-recommends nautilus-open-terminal #gnome
 aptitude install --without-recommends gnome-panel #gnome
 aptitude install --without-recommends gtk2-engines #gnome
 aptitude install --without-recommends gnome-themes #gnome
+aptitude install --without-recommends gnome-themes-standard #gnome
+aptitude install --without-recommends gnome-settings-daemon #gnome
 aptitude install --without-recommends file-roller #gnome
-
-#Pidgin
-aptitude install --without-recommends pidgin #net
 
 #Fonts
 aptitude install fonts-cantarell #fonts
 aptitude install ttf-bitstream-vera #fonts
+
+#Pidgin
+aptitude install --without-recommends pidgin #net
 
 #LibreOffice
 aptitude install --without-recommends libreoffice-calc #editors
@@ -202,11 +224,6 @@ aptitude install --without-recommends libreoffice-gtk3 #gnome
 aptitude install --without-recommends libreoffice-gnome #gnome
 aptitude install libreoffice-style-tango #editors
 aptitude install libreoffice-l10n-ru
-
-#SQLite 3
-aptitude install sqlite3 #database
-aptitude install sqlitebrowser #database
-#aptitude install sqlite3-doc #doc
 
 #Perl
  #LWP
@@ -230,13 +247,9 @@ aptitude install sqlitebrowser #database
  #/usr/bin/HEAD
 aptitude install --without-recommends libwww-perl #perl
 
-#Git
-aptitude install --without-recommends git #vcs
-#aptitude install gitmagic #doc
-
 #Ruby
-aptitude install --without-recommends ruby rubygems #ruby
 aptitude install --without-recommends ruby #ruby
+aptitude install --without-recommends rubygems #ruby
 aptitude install --without-recommends ruby-dev #ruby
 
 #Gems
@@ -254,4 +267,15 @@ gem install mechanize
 aptitude install --without-recommends python-dev #python
 aptitude install --without-recommends python-setuptools #python
 aptitude install --without-recommends python-pip #python
+
+#Dropbox
+echo 'deb http://linux.dropbox.com/debian sid main' >> /etc/apt.sources.list
+aptitutde update
+aptitude install --without-recommends dropbox
+
+#Charles
+wget -q -O - http://www.charlesproxy.com/packages/apt/PublicKey | apt-key add -
+echo 'deb http://www.charlesproxy.com/packages/apt/ charles-proxy main' >> /etc/apt/sources.list
+aptitutde update
+aptitude install --without-recommends charles-proxy
 
