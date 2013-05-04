@@ -5,6 +5,11 @@ Shared memory
 
 py
 --
+**betting**
+
+ * `betting.py` - Crawls all new posts from [http://forum.bettingadvice.com/](http://forum.bettingadvice.com/)
+ * `ids.txt` - contains User ID, Name, the most recent Post ID, Post Time, Post Date separated by `|' line by line
+
 `UserAgent.py` by default prints all the User-Agents it knows.
 
 _random_user_agent()_ prints random User-Agent,
