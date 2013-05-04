@@ -5,7 +5,7 @@ Shared memory
 
 py
 --
-**betting**
+**bettin**
 
  * `betting.py` - Crawls all new posts from [http://forum.bettingadvice.com/](http://forum.bettingadvice.com/)
  * `ids.txt` - contains User ID, Name, the most recent Post ID, Post Time, Post Date separated by `|' line by line
