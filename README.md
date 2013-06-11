@@ -1,10 +1,9 @@
-dev
-===
+Languages
+=========
 
-Shared memory
+Python
+------
 
-py
---
 **bettin**
 
  * `betting.py` - Crawls all new posts from [http://forum.bettingadvice.com/](http://forum.bettingadvice.com/)
@@ -62,8 +61,15 @@ Usage: ./urllib.unquote.py <string>
        <pipeline_string> | ./urllib.unquote.py
 ```
 
-sh
---
+Ruby
+----
+
+`nokogiri.rb` Brand new script to login with aspnetForm via creating new `Mechanize::Form` and submitting it.
+
+`nokogiri-post.rb` Brand new script to login with aspnetForm via researching with `Nokogiri:HTML` and posting data.
+
+Shell
+-----
 `procinfo.sh`
 
 --
@@ -213,10 +219,3 @@ love
 
 --
 `moyareklama_ad_parse_emails.sh` Grab emails from fresh http://www.moyareklama.ru/ ads.
-
-rb
---
-
-`nokogiri.rb` Brand new script to login with aspnetForm via creating new `Mechanize::Form` and submitting it.
-
-`nokogiri-post.rb` Brand new script to login with aspnetForm via researching with `Nokogiri:HTML` and posting data.
