@@ -1,6 +1,0 @@
-#!/bin/bash
-if [ ! $1 ] ; then echo "Usage: $0 <command>" ; exit 1 ; fi
-
-grep " $1 " /home/debian/Documents/TXT/unix_commands.txt
-
-exit 0
