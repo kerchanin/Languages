@@ -1,0 +1,21 @@
+#!/bin/bash
+# 2012.04.03
+
+history -c
+VERYRANDOMDIRECTORY=/home/debian
+cd $VERYRANDOMDIRECTORY
+rm .bash_history*
+rm .lesshst
+rm .nano_history
+rm .sqlite_history
+rm .viminfo
+rm .xsession-errors*
+rm .pyhistory
+rm .zsh_history
+rm .pry_history
+rm .recently-used
+#!!!
+rm -rf .thumbnails
+unset VERYRANDOMDIRECTORY
+history -c
+

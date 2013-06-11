@@ -1,0 +1,7 @@
+#! /bin/bash
+packages=$(echo `dpkg -l | grep $1 | awk '{print $2}' | tr "\n" " "`)
+echo $packages | tr ' ' '\012' | nl
+echo $packages
+sudo aptitude purge $packages
+exit 0
+

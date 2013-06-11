@@ -1,0 +1,14 @@
+The baudrate of the current line: [1;35m\b[0m
+The current date: [1;36m\d[0m
+The system name, the name of the operating system: [1;35m\s[0m
+The name of the current tty line: [1;35m\l[0m
+The architecture identifier of the machine, eg. i486: [1;35m\m[0m
+The nodename of the machine, also known as the hostname: [1;35m\n[0m
+The NIS domainname of the machine: [1;35m\o[0m
+The DNS domainname of the machine: [1;35m\O[0m
+The release number of the OS, eg. 1.1.9: [1;35m\r[0m
+The current time: [1;36m\t[0m
+The number of current users logged in: [1;35m\u[0m
+The string "1 user" or "<n> users" where <n> is the number of current users logged in: [1;35m\U[0m
+The version of the OS, eg. the build-date etc: [1;35m\v[0m
+
