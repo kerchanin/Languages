@@ -70,6 +70,7 @@ Ruby
 
 Shell
 -----
+
 `procinfo.sh`
 
 --
@@ -192,9 +193,9 @@ love
 
 --
 
-`WMakerSession.sh`
+`gnome-fallback_like_session.sh`
 
-`Session.sh`
+`wmaker_session.sh`
 
 --
 `demerge.sh`
