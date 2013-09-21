@@ -1,0 +1,396 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>firefox_shortcuts.sikuli\common.sikuli</h2> <a href="firefox_shortcuts.sikuli\common.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="cmt">#!/usr/bin/env python
+</span><span class="cmt"># -*- coding: utf-8 -*-
+</span>
+<span class="kw">from</span> sikuli.Sikuli <span class="kw">import</span> *
+
+<span class="str">"""
+http://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly
+
+    Navigation
+    Current Page
+    Editing
+    Search
+    Windows &amp; Tabs
+    History
+    Bookmarks
+    Tools
+    PDF Viewer
+    Miscellaneous
+    Media shortcuts (Ogg and WebM Videos Only)
+"""</span>
+
+<span class="kw">class</span> Navigation(object):
+    <span class="str">"""
+
+    """</span>
+
+    <span class="kw">def</span> __init__(cls):
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> back():
+        <span class="skw">type</span>(Key.LEFT, KeyModifier.ALT)
+
+    @staticmethod
+    <span class="kw">def</span> forward():
+        <span class="skw">type</span>(Key.RIGHT, KeyModifier.ALT)
+
+    @staticmethod
+    <span class="kw">def</span> home():
+        <span class="skw">type</span>(Key.HOME, KeyModifier.ALT)
+
+    @staticmethod
+    <span class="kw">def</span> open_file():
+        <span class="skw">type</span>(<span class="str">'o'</span>, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> reload():
+        <span class="skw">type</span>(Key.F5)
+
+    @staticmethod
+    <span class="kw">def</span> reload_override_cache():
+        <span class="skw">type</span>(Key.F5, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> stop():
+        press(Key.ESC)
+
+<span class="kw">class</span> CurrentPage(object):
+    <span class="str">"""
+
+    """</span>
+
+    <span class="kw">def</span> __init__(cls):
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> go_to_bottom_of_page():
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> go_to_top_of_page():
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> move_to_next_frame():
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> move_to_previous_frame():
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> print_():
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> save_page_as():
+        <span class="skw">type</span>(<span class="str">'s'</span>, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> zoome_in():
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> zoom_out():
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> zoom_reset():
+        <span class="kw">pass</span>
+
+<span class="kw">class</span> Editing(object):
+    <span class="str">"""
+
+    """</span>
+
+    <span class="kw">def</span> __init__(cls):
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> copy():
+        <span class="skw">type</span>(<span class="str">'c'</span>, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> cut():
+        <span class="skw">type</span>(<span class="str">'x'</span>, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> delete():
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> paste():
+        <span class="skw">type</span>(<span class="str">'p'</span>, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> paste_as_plain_text():
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> redo():
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> select_all():
+        <span class="skw">type</span>(<span class="str">'a'</span>, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> undo():
+        <span class="kw">pass</span>
+
+<span class="kw">class</span> Search(object):
+    <span class="str">"""
+
+    """</span>
+
+    <span class="kw">def</span> __init__(cls):
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> <span class="skw">find</span>():
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> find_again():
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> find_previous():
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> quick_find_within_linktext_only():
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> quick_find():
+        <span class="skw">type</span>(<span class="str">'/'</span>)
+
+    @staticmethod
+    <span class="kw">def</span> close_the_find_or_quick_find_bar():
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> search_bar():
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> select_or_manage_search_engines():
+        <span class="kw">pass</span>
+
+<span class="kw">class</span> WindowsAndTabs(object):
+    <span class="str">"""
+
+    """</span>
+
+    <span class="kw">def</span> __init__(cls):
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> close_tab():
+        <span class="skw">type</span>(<span class="str">'w'</span>, KeyModifier.CTRL)
+        <span class="cmt"># or
+</span>        <span class="cmt">#type(Key.F4, KeyModifier.CTRL)
+</span>
+    @staticmethod
+    <span class="kw">def</span> close_window(shortcut=<span class="str">''</span>):
+        <span class="kw">if</span> shortcut.lower() != <span class="str">'Alt-F4'</span>.lower():
+            <span class="skw">type</span>(<span class="str">'w'</span>, KeyModifier.CTRL + KeyModifier.SHIFT)
+        <span class="kw">else</span>:
+            <span class="skw">type</span>(Key.F4, KeyModifier.ALT)
+
+    @staticmethod
+    <span class="kw">def</span> move_tab_in_focus_left():
+        <span class="skw">type</span>(Key.PAGE_UP, Key.KeyModifier.CTRL + KeyModifier.SHIFT)
+
+    @staticmethod
+    <span class="kw">def</span> move_tab_in_focus_right():
+        <span class="skw">type</span>(Key.PAGE_DOWN, Key.KeyModifier.CTRL + KeyModifier.SHIFT)
+
+    @staticmethod
+    <span class="kw">def</span> move_tab_in_focus_to_start():
+        <span class="skw">type</span>(Key.HOME, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> move_tab_in_focus_to_end():
+        <span class="skw">type</span>(Key.END, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> new_tab():
+        <span class="skw">type</span>(<span class="str">'t'</span>, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> new_window():
+        <span class="skw">type</span>(<span class="str">'n'</span>, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> next_tab():
+        <span class="skw">type</span>(Key.TAB, KeyModifier.CTRL)
+        <span class="cmt"># or
+</span>        <span class="cmt">#type(Key.PAGE_DOWN, KeyModifier.CTRL)
+</span>
+    @staticmethod
+    <span class="kw">def</span> open_address_in_new_tab():
+        <span class="skw">type</span>(Key.AL, Key.ENTER)
+
+    @staticmethod
+    <span class="kw">def</span> previous_tab():
+        <span class="skw">type</span>(Key.TAB, KeyModifier.CTRL + KeyModifier.SHIFT)
+        <span class="cmt"># or
+</span>        <span class="cmt">#type(Key.PAGE_UP, KeyModifier.CTRL)
+</span>
+    @staticmethod
+    <span class="kw">def</span> undo_close_tab():
+        <span class="skw">type</span>(<span class="str">'t'</span>, KeyModifier.CTRL + KeyModifier.SHIFT)
+
+    @staticmethod
+    <span class="kw">def</span> undo_close_tab():
+        <span class="skw">type</span>(<span class="str">'n'</span>, KeyModifier.CTRL + KeyModifier.SHIFT)
+
+    @staticmethod
+    <span class="kw">def</span> select_tab1():
+        <span class="skw">type</span>(<span class="str">'1'</span>, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> select_tab2():
+        <span class="skw">type</span>(<span class="str">'2'</span>, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> select_tab3():
+        <span class="skw">type</span>(<span class="str">'3'</span>, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> select_tab4():
+        <span class="skw">type</span>(<span class="str">'4'</span>, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> select_tab5():
+        <span class="skw">type</span>(<span class="str">'5'</span>, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> select_tab6():
+        <span class="skw">type</span>(<span class="str">'6'</span>, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> select_tab7():
+        <span class="skw">type</span>(<span class="str">'7'</span>, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> select_tab8():
+        <span class="skw">type</span>(<span class="str">'8'</span>, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> select_last_tab():
+        <span class="skw">type</span>(<span class="str">'9'</span>, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> tab_groups_view():
+        <span class="skw">type</span>(<span class="str">'e'</span>, KeyModifier.CTRL + KeyModifier.SHIFT)
+
+    @staticmethod
+    <span class="kw">def</span> next_tab_group():
+        <span class="skw">type</span>(<span class="str">'`'</span>, KeyModifier.CTRL)
+
+    @staticmethod
+    <span class="kw">def</span> previous_tab_group():
+        <span class="skw">type</span>(<span class="str">'`'</span>, KeyModifier.CTRL, KeyModifier.SHIFT)
+
+<span class="kw">class</span> Tools(object):
+    <span class="str">"""
+
+    """</span>
+
+    <span class="kw">def</span> __init__(cls):
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> page_source():
+        <span class="skw">type</span>(<span class="str">'u'</span>, KeyModifier.CTRL)
+
+<span class="kw">class</span> Miscellaneous(object):
+    <span class="str">"""
+
+    """</span>
+
+    <span class="kw">def</span> __init__(cls):
+        <span class="kw">pass</span>
+
+    @staticmethod
+    <span class="kw">def</span> select_location_bar():
+        <span class="skw">type</span>(<span class="str">'d'</span>, KeyModifier.ALT)
+</pre>
+</body>
+</html>
