@@ -18,16 +18,16 @@ def edit_one_card():
     click(target2.getCenter().offset(0, 20))
     wait(1)
     click("1379769971787.png")
-    #type('u', KeyModifier.CTRL)
+    #type("u", KeyModifier.CTRL)
     click("1379769971787.png")
-    #type('f', KeyModifier.CTRL)
+    #type("f", KeyModifier.CTRL)
     #type("<title>")
     #title = input()
     #if input:
     #    click("1379769971787.png")
-    #    type('w', KeyModifier.CTRL)
+    #    type("w", KeyModifier.CTRL)
     #    click("1379769971787.png")
-    #    type('w', KeyModifier.CTRL)
+    #    type("w", KeyModifier.CTRL)
     #click("1379769971787.png")
     
     # Title.
@@ -37,12 +37,12 @@ def edit_one_card():
     # click("1379771445870.png")
     #click(find("1379772067937.png").getCenter().targetOffset(0,20))
     paste("window.prompt('Copy to clipboard: Ctrl+C, Enter', document.title);")
-    type('\n')
-    type('c', KeyModifier.CTRL)
+    type("\n")
+    type("c", KeyModifier.CTRL)
     ok = find("1379771647959.png")
     click(ok.getCenter())
     click("1379769971787.png")
-    type('w', KeyModifier.CTRL)    
+    type("w", KeyModifier.CTRL)    
     wait("1379769644699.png")
     
     # Ready to edit.
