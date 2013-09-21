@@ -30,7 +30,7 @@ def edit_one_card():
     #    type('w', KeyModifier.CTRL)
     #click("1379769971787.png")
     
-    # Title
+    # Title.
     type(Key.F12)
     wait(2)
     # wait("1379771445870.png")
@@ -45,7 +45,7 @@ def edit_one_card():
     type('w', KeyModifier.CTRL)    
     wait("1379769644699.png")
     
-    # Ready to edit
+    # Ready to edit.
     click("1379769644699.png")
     wait("1379770496208.png")
     target3 = find("1379770534019.png")
