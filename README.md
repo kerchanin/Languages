@@ -220,3 +220,7 @@ love
 
 --
 `moyareklama_ad_parse_emails.sh` Grab emails from fresh http://www.moyareklama.ru/ ads.
+
+Sikuli
+------
+

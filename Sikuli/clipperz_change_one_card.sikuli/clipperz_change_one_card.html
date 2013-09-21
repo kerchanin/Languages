@@ -1,0 +1,146 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>clipperz_change_one_card.sikuli\clipperz_change_one_card.sikuli</h2> <a href="clipperz_change_one_card.sikuli\clipperz_change_one_card.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="cmt"># -*- coding: utf-8 -*-
+</span><span class="cmt"># 2013.09.21
+</span>
+setShowActions(True)
+<span class="skw">click</span>(<img src="1379770394281.png" />)
+
+<span class="kw">def</span> edit_one_card():
+    <span class="cmt">#target = find("1379769618078.png")
+</span>    target = <span class="skw">find</span>(<img src="1379781003263.png" />)
+    y = <span class="dig">0</span>
+    y = y + <span class="dig">10</span> - <span class="dig">10</span>
+    <span class="skw">click</span>(target.getCenter().offset(<span class="dig">0</span>, y))
+    <span class="skw">wait</span>(<img src="1379769644699.png" />)
+    <span class="cmt">#click("1379769644699.png")
+</span>
+    <span class="cmt"># To the site
+</span>    target2 = <span class="skw">find</span>(<img src="1379769733329.png" />)
+    <span class="skw">click</span>(target2.getCenter().offset(<span class="dig">0</span>, <span class="dig">20</span>))
+    <span class="skw">wait</span>(<span class="dig">1</span>)
+    <span class="skw">click</span>(<img src="1379769971787.png" />)
+    <span class="cmt">#type('u', KeyModifier.CTRL)
+</span>    <span class="skw">click</span>(<img src="1379769971787.png" />)
+    <span class="cmt">#type('f', KeyModifier.CTRL)
+</span>    <span class="cmt">#type("&lt;title&gt;")
+</span>    <span class="cmt">#title = input()
+</span>    <span class="cmt">#if input:
+</span>    <span class="cmt">#    click("1379769971787.png")
+</span>    <span class="cmt">#    type('w', KeyModifier.CTRL)
+</span>    <span class="cmt">#    click("1379769971787.png")
+</span>    <span class="cmt">#    type('w', KeyModifier.CTRL)
+</span>    <span class="cmt">#click("1379769971787.png")
+</span>
+    <span class="cmt"># Title
+</span>    <span class="skw">type</span>(Key.F12)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="cmt"># wait("1379771445870.png")
+</span>    <span class="cmt"># click("1379771445870.png")
+</span>    <span class="cmt">#click(find("1379772067937.png").getCenter().targetOffset(0,20))
+</span>    paste(<span class="str">"window.prompt('Copy to clipboard: Ctrl+C, Enter', document.title);"</span>)
+    <span class="skw">type</span>(<span class="str">'\n'</span>)
+    <span class="skw">type</span>(<span class="str">'c'</span>, KeyModifier.CTRL)
+    ok = <span class="skw">find</span>(<img src="1379771647959.png" />)
+    <span class="skw">click</span>(ok.getCenter())
+    <span class="skw">click</span>(<img src="1379769971787.png" />)
+    <span class="skw">type</span>(<span class="str">'w'</span>, KeyModifier.CTRL)
+    <span class="skw">wait</span>(<img src="1379769644699.png" />)
+
+    <span class="cmt"># Ready to edit
+</span>    <span class="skw">click</span>(<img src="1379769644699.png" />)
+    <span class="skw">wait</span>(<img src="1379770496208.png" />)
+    target3 = <span class="skw">find</span>(<img src="1379770534019.png" />)
+    <span class="skw">click</span>(target3.getCenter().offset(<span class="dig">0</span>, <span class="dig">20</span>))
+    <span class="kw">for</span> j <span class="kw">in</span> range(<span class="dig">1</span>,<span class="dig">50</span>) : <span class="skw">type</span>(Key.BACKSPACE)
+    <span class="cmt">#type(title)
+</span>    <span class="cmt">#for j in range(1,50) : type(Key.BACKSPACE)
+</span>    <span class="skw">type</span>(<span class="str">"v"</span>, KeyModifier.CTRL)
+    target4 = <span class="skw">find</span>(<img src="1379770654261.png" />)
+    <span class="skw">click</span>(target4)
+    <span class="skw">wait</span>(<img src="1379770693132.png" />)
+    <span class="skw">click</span>(target4.getCenter().offset(<span class="dig">0</span>, -<span class="dig">10</span>))
+    paste(<span class="str">"type"</span>)
+    <span class="skw">type</span>(<span class="str">"\t"</span>)
+    paste(<span class="str">"freelance"</span>)
+    <span class="skw">click</span>(<span class="skw">find</span>(<img src="1379770763844.png" />))
+    <span class="skw">wait</span>(<img src="1379769644699.png" />)
+
+<span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">1</span>, <span class="dig">2</span>):
+    <span class="kw">try</span>:
+        edit_one_card()
+    <span class="kw">except</span>:
+        <span class="kw">pass</span>
+</pre>
+</body>
+</html>
